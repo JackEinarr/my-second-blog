@@ -25,7 +25,7 @@ SECRET_KEY = 'nph0171any)z_o15ex76o6dx2)t-14=458n2-d#ft+=$&yqnb4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1','.pythonanywhere.com',]
 
 
 # Application definition
@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog'
+    'rest_framework',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -120,4 +121,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT = 'C:\djangogirls\mysite\settings.py'
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
